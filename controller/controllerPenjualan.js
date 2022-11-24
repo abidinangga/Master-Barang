@@ -26,7 +26,7 @@ class PenjualanController {
         });
       } else {
         const beli = await penjualan.create(beliBarang);
-        req.status(201).json({
+        res.status(201).json({
           data: beli,
         });
       }
