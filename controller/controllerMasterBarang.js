@@ -13,7 +13,7 @@ class masterBarangController {
         stokBarang: +req.body.stokBarang,
       };
       const barang = await masterBarang.create(newData);
-      req.status(201).json({
+      res.status(201).json({
         data: barang,
       });
     } catch (error) {
