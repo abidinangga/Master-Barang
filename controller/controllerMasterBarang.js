@@ -38,7 +38,7 @@ class masterBarangController {
         namaBarang: req.body.namaBarang,
         hargaJual: +req.body.hargaJual,
         hargaBeli: +req.body.hargaBeli,
-        satuan: +req.body.satuan,
+        satuan: req.body.satuan,
         kategori: req.body.kategori,
         stokBarang: +req.body.stokBarang,
       };
